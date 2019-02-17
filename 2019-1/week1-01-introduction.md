@@ -22,3 +22,22 @@ DB를 사용하는 여러 역할들
 
 당신은 DB와 관련해서 어떤 분야에서 일하고 싶은 것인지 잘 생각해보랍니다.
 people skills and interaction vs. technical skills and tasks
+
+### DBMS Overview and Database Definition Feature
+DBMS는 다음과 같은 일을 할 수 있어야 한다.
+* Data Acquisition
+* Dissemination
+* Storage
+* Maintenance
+* Retrieval
+* Formatting
+
+DB의 종류
+* Enterprise DBMS: Oracle, IBM, Microsoft, SAP, Teradata, MySQL 등
+* Desktop DBMS: MS Access
+* Embedded DBMS: Mobile 시장이 성장하면서 대두됨
+
+DB의 정의: Desktop Application인 Spread Sheet, Word Processor와 어떻게 다른가
+* __Planning is essential__
+* Table과 Releationship
+* SQL (Structured Query Language) 및 GUI
