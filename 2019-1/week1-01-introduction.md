@@ -41,3 +41,16 @@ DB의 정의: Desktop Application인 Spread Sheet, Word Processor와 어떻게 �
 * __Planning is essential__
 * Table과 Releationship
 * SQL (Structured Query Language) 및 GUI
+
+### Non-Procedural Access
+
+Non-procedural Access가 뭐냐?
+* Computing skill이 부족한 사람도 DB에 query를 무사히 날릴 수 있게 하는 개념
+* 무엇을 가져올 지에 집중하지, 어떻게 가져올 지에 집중하지 않도록 함
+* 특히 반복문의 개념이 없어서 길면서도 복잡한 코드를 짤 수 없도록 함
+100배의 생산성 증가를 가져온 개념
+
+Procedural Language Interface: Non-procedural Access만으로 힘들 때
+* Batch Processing
+* Customization / Automation
+* Performance 향상
