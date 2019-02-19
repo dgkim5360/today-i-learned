@@ -54,3 +54,19 @@ Procedural Language Interface: Non-procedural Access만으로 힘들 때
 * Batch Processing
 * Customization / Automation
 * Performance 향상
+
+### Transaction Processing Overview
+
+Transaction은 음... 우리 삶에서 매우 중요하다.
+
+그래서 뭐냐?
+* 온전히 한 단위로 처리되어야 하는 작업들의 묶음 (All or Nothing)
+* Concurrency에 따른 문제나, 서버가 죽는 등의 문제 상황에서도
+  데이터 손실을 없도록 하는 처리 과정
+
+Transaction을 지원하기 위한 Database의 내부 기능
+* Concurrency Control Manager
+* Recovery Manager
+그리고 이 기능들은 투명(Transparent)하다.
+=> 실제 사용자에겐 노출되지 않는다는 말
+그리고 이 기능들은 더 많은 자원을 필요로 한다.
