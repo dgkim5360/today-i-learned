@@ -24,3 +24,19 @@ Column         | Attribute    | Field
 ===============================================
 End users      | Academic     | Information systems
                | researchers  | professionals
+
+### Integrity Rules
+ensure an essential level of validity for rows stored in tables
+
+##### Entity Integrity: Primary Keys
+* Each table must have a column or combination of columns, known as the primary key
+* PK must have unique values with no rows having a missing value
+* Ensure traceable entities
+  For auditing, security and communication reasons,
+  it is important that business entities are easily traceable and unique
+
+##### Referential Integrity: Foreign Keys
+* Ensure the correctness in matching values
+* Ensure valid references among tables
+
+##### Oracle Relational Diagram
