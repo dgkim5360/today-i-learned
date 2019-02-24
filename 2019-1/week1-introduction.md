@@ -70,3 +70,54 @@ Transaction을 지원하기 위한 Database의 내부 기능
 그리고 이 기능들은 투명(Transparent)하다.
 => 실제 사용자에겐 노출되지 않는다는 말
 그리고 이 기능들은 더 많은 자원을 필요로 한다.
+
+### Data Warehouse Processing Overview
+
+Traditional decision making hierarchy
+* Lower-level: 단기적 문제 해결 (e.g. individual transactions, daily operations)
+  - Resolution of shipment delays
+  - Scheduling employees
+  - Restocking products
+* Middle-level: (주로) 년 단위의 전술적 결정 (tactical decision)
+  - Forecasting annual sales
+  - Choosing suppliers and related contract terms
+  - Determining the annual staffing levels
+* Top-level: 더 장기적으로 조직의 방향성을 이끄는 전략적 결정 (strategic decision)
+  - Identification of new markets
+  - Determining pricing levels
+  - Choosing new locations for plants and stores
+
+##### Operational Databases
+Provide the raw materials (primary data) for management decision-making
+
+Operational databases에 투자하는 이유
+* Faster processing
+* Larger volumes of business
+* Reduced personnel costs
+=> Lower-level management에 주로 쓰임
+
+Operational DB + value (summarized & integrated)
+=> Middle / Top level management에 쓰일 수 있다
+
+##### Data Warehouse (William Inmon in 1990):
+A logically centralized data repository where data from
+operational databases and other sources are integrated, cleaned and
+standardized to support business intelligence.
+
+Benefits (enabled by business analysis):
+* Increased revenue (e.g. target marketing)
+* Reduced expenses (e.g. fraud detection, demand forecasting)
+
+##### Transactional Processing vs. Business Intelligence Processing
+* Transactional Processing
+  - relies on operational DB
+  - individual-level data: provides flexibility for responding to a wide range of BI needs
+  - Operational DB is process oriented
+  - typically updates only a few records
+* BI Processing
+  - utilizes DW
+  - w/ historical data at both the individual and summarized levels
+  - Summarized data: provides  fast response to repetitive queries
+  - DW is subject oriented
+  - may query thousands to millions of records;
+    requires substantial daily processing using non-peak hours for transformations and integration
