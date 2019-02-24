@@ -121,3 +121,23 @@ Benefits (enabled by business analysis):
   - DW is subject oriented
   - may query thousands to millions of records;
     requires substantial daily processing using non-peak hours for transformations and integration
+
+### DBMS Technology Evolution
+
+##### Four Generations of DBMS Evolution
+1. 1960's: Sequential and random searching of files
+  - requires to write detailed computer programs to access data
+  - Little or no standards for the database software industry
+2. 1970's: Could manage multiple entity types and relationships (The first true DBMS)
+  - requires to write detailed computer programs to access data
+  - Navigational system: because the program had to write code to navigate among a network of linked records
+  - Some progress on standards; IBM (the major at the time) ignored it
+3. 1980's: Based on mathematical relation and associate operators (Relational DBMS)
+  - Optimization technology was developed so that access using non-procedural language would be efficient.
+  - IBM performed pioneering research and development in the 1970s
+    to enable commercialization of relational database technology in the 1980s.
+4. 1990's+: Extending the boundaries of database technology to unconventional data
+  - new kinds of distributive processing, and data warehouse processing
+  - unconventional data types: images, videos, maps, sounds, animations, web data
+  - Because these DBMS' view any kind of data as an object to manage,
+    fourth generation systems are sometimes called object-relational or object-oriented
