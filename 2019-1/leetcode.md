@@ -9,3 +9,6 @@
 - [674. Longest Continuous Increasing Subsequence](https://leetcode.com/problems/longest-continuous-increasing-subsequence) by [Rust](https://leetcode.com/submissions/detail/210236204)
 - [627. Swap Salary](https://leetcode.com/problems/swap-salary) by [MySQL](https://leetcode.com/submissions/detail/210237997)
 - [197. Rising Temperature](https://leetcode.com/problems/rising-temperature) by [MySQL](https://leetcode.com/submissions/detail/210239166)
+
+#### 4th Week, Feb 2019
+- [974. Subarray Sums Divisible by K](https://leetcode.com/problems/subarray-sums-divisible-by-k) by [Rust](https://leetcode.com/submissions/detail/210526296)
