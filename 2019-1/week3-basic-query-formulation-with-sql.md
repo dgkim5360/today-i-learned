@@ -55,3 +55,18 @@ the SELECT statements are not portable across Oracle and MySQL
 because of the different date functions in the two DBMS's.
 - Oracle: `to_char`, `to_number`
 - MySQL: `date_format`
+
+
+### JOIN Operator
+Builds a new table by combining rows
+from two tables that match on a join condition
+
+##### Unqualified Column
+Unqualified means the column name alone without the table.
+특정 Table에 종속되지 않는 column
+e.g. PK, FK
+
+##### EQUI-JOIN (Equality Join)
+When the join condition involves equality.
+The join columns have the same unqualified name.
+Typically, the join columns are a combination of PK and FK.
