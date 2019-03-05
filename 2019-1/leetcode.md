@@ -16,3 +16,6 @@
 - [565. Array Nesting](https://leetcode.com/problems/array-nesting) by [C](https://leetcode.com/submissions/detail/211052643)
 - [150. Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation) by [Rust](https://leetcode.com/submissions/detail/211517132)
 - [176. Second Highest Salary](https://leetcode.com/problems/second-highest-salary) by [MySQL](https://leetcode.com/submissions/detail/211522504)
+
+#### 1st Week, Mar 2019
+- [86. Partition List](https://leetcode.com/problems/partition-list) by [C](https://leetcode.com/submissions/detail/211927555)
