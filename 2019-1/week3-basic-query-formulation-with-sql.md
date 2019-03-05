@@ -70,3 +70,77 @@ e.g. PK, FK
 When the join condition involves equality.
 The join columns have the same unqualified name.
 Typically, the join columns are a combination of PK and FK.
+
+
+### Using JOIN Operations in SQL SELECT Statements
+
+##### Cross Product Style
+```
+SELECT OfferNo, CourseNo, FacFirstName, FacLastName
+FROM Offering, Faculty
+WHERE OffTerm = 'FALL'
+    AND OffYear = 2016
+    AND FacRank = 'ASST'
+    AND CourseNo LIKE 'IS%'
+    AND Faculty.FacNo = Offering.FacNo  -- JOIN condition!
+;
+```
+- Easy to read
+- Table order is not important (알아서 잘 해준다)
+- Error-prone
+- Not efficient
+
+```
+SELECT OfferNo, Offering.CourseNo, OffDays,
+    CrsUnits, OffLocation, OffTime
+FROM Faculty, Course, Offering
+WHERE Faculty.FacNo = Offering.FacNo
+    AND Offering.CourseNo = Course.CourseNo
+    AND OffYear = 2016
+    AND OffTerm = 'FALL'
+    AND FacFirstName = 'LEONARD'
+    AND FacLastName = 'VINCE'
+;
+```
+
+##### JOIN Operator Style
+```
+SELECT OfferNo, CourseNo, FacFirstName, FacLastName
+FROM Offering
+INNER JOIN Faculty
+ON Faculty.FacNo = Offering.CourseNo
+WHERE OffTerm = 'FALL'
+    AND OffYear = 2016
+    AND FacRank = 'ASST'
+    AND CourseNo LIKE 'IS%'
+```
+- Table order is not important, again
+
+```
+SELECT OfferNo, Offering.CourseNo, OffDays,
+    CrsUnits, OffLocation, OffTime
+FROM Offering
+INNER JOIN Course
+ON Offering.CourseNo = Course.CourseNo
+INNER JOIN Faculty
+ON Faculty.FacNo = Offering.FacNo
+WHERE OffYear = 2016
+    AND OffTerm = 'FALL'
+    AND FacFirstName = 'LEONARD'
+    AND FacLastName = 'VINCE'
+;
+```
+
+* JOIN style에 관계없이 N개 테이블의 JOIN을 위해서는
+  N-1 개의 JOIN condition이 필요하다.
+* 이를 위반하게 되면 심각한 오류가 발생한다.
+  - 정확하지 않은 결과
+  - 높은 수준의 자원 소비
+
+##### Name Qualification
+어느 테이블에 속한 column인지 몰라서 혼란스럽지 않도록 표기
+```
+ON Faculty.FacNo = Offering.CourseNo
+```
+
+Required in JOIN operation
