@@ -19,3 +19,6 @@
 
 #### 1st Week, Mar 2019
 - [86. Partition List](https://leetcode.com/problems/partition-list) by [C](https://leetcode.com/submissions/detail/211927555)
+- [162. Find Peak Element](https://leetcode.com/problems/find-peak-element) by [C](https://leetcode.com/submissions/detail/212262501)
+- [451. Sort Characters By Frequency](https://leetcode.com/problems/sort-characters-by-frequency) by [Python](https://leetcode.com/submissions/detail/212268681)
+- [238. Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self) by [C](https://leetcode.com/submissions/detail/212276037)
