@@ -144,3 +144,50 @@ ON Faculty.FacNo = Offering.CourseNo
 ```
 
 Required in JOIN operation
+
+
+### GROUP BY Clause
+
+##### Row Summaries
+- Important for decision-making tasks
+- Row summary details
+  - Result contains statistical (aggregate) functions
+  - Conditions involve statstical functions
+- SQL Keywords
+  - Aggregate functions in the results list such as `AVG` and `SUM`
+  - `GROUP BY`: summary columns
+  - `HAVING`: summary conditions (row conditions in `WHERE`)
+
+```
+SELECT FacRank, AVG(FacSalary) AS AvgSalary
+FROM Faculty
+GROUP BY FacRank
+ORDER BY FacRank
+;
+```
+
+```
+SELECT StdMajor, AVG(StdGPA) as AvgGPA
+FROM Student
+WHERE StdClass IN ('JR', 'SR')
+GROUP BY StdMajor
+HAVING AVG(StdGPA) > 3.1
+;
+```
+
+##### Query Clause Evalutation Order
+
+1. Row operations
+  - `FROM`
+  - `WHERE`
+2. Group operations (occurs only one time)
+  - `GROUP BY`
+  - `HAVING`
+3. Final operations for results
+  - `ORDER BY`
+  - `SELECT`
+
+> If a SELECT statement does not produce correct results,
+> you should consider using small sample tables to trace the result.
+> Using small tables is tedious but it can be helpful
+> when initially learning query formulation or when facing a difficult problem.
