@@ -91,3 +91,52 @@ WHERE Offering.OfferNo = Enrollment.OfferNo
 GROUP BY Enrollment.OfferNo, CourseNo
 ;
 ```
+
+
+### SQL SET Operators
+
+##### Union Compatibility
+UNION compatibility means that each table must have the same number of columns and
+each corresponding column must have a compatible data type.
+- Requirement for the traditional set operators
+- Strong requirement
+  - Same number of columns
+  - Each corresponding column is compatible
+  - Positional correspondence
+- Apply to similar tables by removing columns first
+
+##### Reality & Limitation & Use Cases
+In practice, compatible data types mean the corresponding columns have the same
+data type, except perhaps for the length specification.
+
+In contrast, the joint operator involves a condition usuaully on a single column from each table
+Compared to the join operator, the set operators are not widely used.
+
+The UNION operator can be used to combine tables
+distributed over multiple locations.
+
+##### Example
+
+```
+SELECT
+    FacNo AS PerNo,
+    FacFirstName AS FirstName,
+    FacLastName AS LastName,
+    FacCity as City,
+    FacState as State
+    FROM Faculty
+UNION
+SELECT
+    StdNo AS PerNo,
+    StdFirstName AS FirstName,
+    StdLastName AS LastName,
+    StdCity AS City,
+    StdState AS State
+FROM Student
+;
+```
+
+`INTERSECT`, `MINUS`도 있다
+- Oracle only
+- Also requires Uion compatibility
+- `MINUS` 대신 SQL standard에서는 `EXCEPT`
