@@ -27,3 +27,6 @@
 #### 2nd Week, Mar 2019
 - [183. Customers Who Never Order](https://leetcode.com/problems/customers-who-never-order) by [MySQL](https://leetcode.com/submissions/detail/214532303)
 - [185. Department Top Three Salaries](https://leetcode.com/problems/department-top-three-salaries) by [MySQL](https://leetcode.com/submissions/detail/215129177)
+- [182. Duplicate Emails](https://leetcode.com/problems/duplicate-emails) by [MySQL](https://leetcode.com/submissions/detail/215131238)
+- [595. Big Countries](https://leetcode.com/problems/big-countries) by [MySQL](https://leetcode.com/submissions/detail/215132329)
+- [196. Delete Duplicate Emails](https://leetcode.com/problems/delete-duplicate-emails) by [MySQL](https://leetcode.com/submissions/detail/215135316)
