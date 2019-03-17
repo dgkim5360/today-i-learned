@@ -140,3 +140,63 @@ FROM Student
 - Oracle only
 - Also requires Uion compatibility
 - `MINUS` 대신 SQL standard에서는 `EXCEPT`
+
+
+### SQL Modification Statements
+
+##### INSERT
+
+```
+INSERT INTO Student
+(
+    StdNo, StdFirstName, StdLastName,
+    StdCity, StdState, StdZip,
+    StdClass, StdMajor, StdGPA
+)
+VALUES
+(
+    '999-99-9999', 'JOE', 'STUDENT',
+    'SEATAC', 'WA', '98042-1121',
+    'FR', 'IS', 0.0
+)
+;
+```
+
+Specifying the followings is not standard across DBMSs
+- the format of constant values
+- null values
+
+##### UPDATE
+
+```
+UPDATE Student
+SET
+(
+    StdMajor = 'ACCT',
+    StdClass = 'SO'
+)
+WHERE
+    StdFirstName = 'JOE'
+    AND StdLastName = 'STUDENT'
+;
+```
+
+Changing PK values should be avoided if possible since
+- update rules on reference rows may not allow the operation.
+- it is complex for a parent table if related child rows exist.
+
+##### DELETE
+
+```
+DELETE FROM Student
+WHERE
+    StdFirstName = 'JOE'
+    AND StdLastName = 'STUDENT'
+;
+```
+
+The DELETE statement is subject to the rules on referenced rows.
+- e.g., a student row cannot be deleted if related enrollment rows exists
+  and deletion action is restrict.
+- Typically rows in a child table should be deleted
+  before associated rows in a parent table.
