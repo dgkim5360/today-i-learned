@@ -200,3 +200,45 @@ The DELETE statement is subject to the rules on referenced rows.
   and deletion action is restrict.
 - Typically rows in a child table should be deleted
   before associated rows in a parent table.
+
+
+### Query Formulation Errors
+
+##### Impact of Errors
+1. Syntax Error
+- No execution, compiler가 실행 전에 잡아줌
+- Sometimes confusing message
+- e.g.
+  - Misspelled keyword
+  - Missing table
+  - Unqualified column name
+
+여기서부터는 compiler가 못 잡아서 실행되는 에러
+2. Redundancy
+- Execution with correct rows
+- Excessive resource usage
+- e.g.
+  - Extra table
+  - Unneeded GROUP BY clause
+
+3. Semantic
+- Execution with incorrect rows
+- Sometimes excessive resource usage
+- e.g.
+  - Missing join or row condition, SERIOUS ERROR!
+  - Missing parentheses
+
+##### Poor Coding Practices
+- Mixed join styles
+- Incompatible constant
+- `LIKE` operator in date comparison
+- Poor clause alignment
+- Incompatible constant
+- `LIKE` operator without pattern matching characters
+
+##### Summary
+- The most serious error: Missing join conditions
+- The most subtle error: semantic error
+  that generates anticipated rows in the result
+- DB error로 일자리를 잃을 수도 있단다
+  
