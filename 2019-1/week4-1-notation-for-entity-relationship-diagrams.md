@@ -70,3 +70,20 @@ ERD의 특징: relationship can have attributes, 특히나 M-N relationship에�
 
 - Associative entity type, with two identifying 1-M relationships
 - 취향에 맞게 사용하면 되는데, associative entity type이 범용적
+
+
+### Relationship Variations II
+
+##### Self-Referencing Relationship
+
+![](images/week4-1-self-referencing.png)
+
+- 1-M일 수도, M-N일 수도
+
+##### M-way Relationship
+
+![](images/week4-1-3-ways.png)
+
+- Association of relationships > 2
+- Indirect representation (instead): Associative entity type and a collection of 1-M relationships
+- 하지만 M=3 이상인 경우는 현실적으로 거의 없음
