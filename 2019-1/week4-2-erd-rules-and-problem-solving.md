@@ -33,3 +33,14 @@
 - Identifying Relationship Rule: At least one participating entity type must be weak for each identifying relationship.
 - Identification Dependency Cardinality Rule:
   The minimum and maximum cardinality must equal 1 for a weak entity type in all identifying relationships.
+
+
+### ERD Problems I
+
+> `Customer`와 `Order`를 위한 DB Design을 해보시오
+
+![](images/week4-2-problem1-customer-and-order.png)
+
+> `Order`를 처리하는 `Employee`를 추가해보시오
+
+![](images/week4-2-problem1-add-employee.png)
