@@ -30,3 +30,10 @@
 - [182. Duplicate Emails](https://leetcode.com/problems/duplicate-emails) by [MySQL](https://leetcode.com/submissions/detail/215131238)
 - [595. Big Countries](https://leetcode.com/problems/big-countries) by [MySQL](https://leetcode.com/submissions/detail/215132329)
 - [196. Delete Duplicate Emails](https://leetcode.com/problems/delete-duplicate-emails) by [MySQL](https://leetcode.com/submissions/detail/215135316)
+
+#### 3rd Week, Mar 2019
+- [177. Nth Highest Salary](https://leetcode.com/problems/nth-highest-salary) by [MySQL](https://leetcode.com/submissions/detail/216917021)
+- [184. Department Highest Salary](https://leetcode.com/problems/department-highest-salary) by [MySQL](https://leetcode.com/submissions/detail/216920566)
+- [620. Not Boring Movies](https://leetcode.com/problems/not-boring-movies) by [MySQL](https://leetcode.com/submissions/detail/216921624)
+- [178. Rank Scores](https://leetcode.com/problems/rank-scores) by [MySQL](https://leetcode.com/submissions/detail/216925721)
+- [180. Consecutive Numbers](https://leetcode.com/problems/consecutive-numbers) by [MySQL](https://leetcode.com/submissions/detail/217174584)
