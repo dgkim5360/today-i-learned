@@ -61,3 +61,9 @@
 > 위에서 만든 M-N relationship을 2개의 1-M relationship으로 바꿔보시오.
 
 ![](images/week4-2-problem2-convert-relationship.png)
+
+
+### ER Assistant Demonstrations
+### Visual Paradigm Demonstrations
+
+특정 GUI 프로그램 사용법 영상
