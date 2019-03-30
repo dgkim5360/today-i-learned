@@ -44,3 +44,20 @@
 > `Order`를 처리하는 `Employee`를 추가해보시오
 
 ![](images/week4-2-problem1-add-employee.png)
+
+
+### ERD Problems 2
+
+위 문제에 이어서 진행됨.
+
+> `Product`를 추가하는데 아래를 만족해야 한다.
+> `Order`와 M-N relationship을 가진다.
+> 이 relationship은 attribute로 order quantity를 가진다.
+> `Order` optional for `Product`
+> `Product` mandatory for `Order`
+
+![](images/week4-2-problem2-add-product.png)
+
+> 위에서 만든 M-N relationship을 2개의 1-M relationship으로 바꿔보시오.
+
+![](images/week4-2-problem2-convert-relationship.png)
