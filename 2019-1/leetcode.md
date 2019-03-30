@@ -40,3 +40,7 @@
 
 #### 4th Week, Mar 2019
 - [262. Trips and Users](https://leetcode.com/problems/trips-and-users) by [MySQL](https://leetcode.com/submissions/detail/217487680)
+- [14. Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix) by [C](https://leetcode.com/submissions/detail/218708778)
+- [27. Remove Element](https://leetcode.com/problems/remove-element) by [C](https://leetcode.com/submissions/detail/218710010)
+- [26. Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array) by [C](https://leetcode.com/submissions/detail/218712426)
+- [58. Length of Last Word](https://leetcode.com/problems/length-of-last-word) by [C](https://leetcode.com/submissions/detail/218714969)
