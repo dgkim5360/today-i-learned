@@ -41,3 +41,24 @@ Business requirements are rarely well designed.
 - Irrelevent details
 
 Business requirements are typically unstructured with missions, inconsistencies in irrelevent details.
+
+
+### Analyzing Narrative Problems
+
+##### Goals of Narrative Problem Analysis
+- Consistency with narratives
+- Identify deficiencies
+- Prefer simpler designs
+
+##### Steps
+1. Identify entity types and attributes
+  - Important nouns
+  - Details about nouns
+  - Preference for a simpler design
+2. Determine PKs (for entity type identification)
+  - Stable: "PK should never change"
+  - Single purpose: 목적은 오직 identification을 위해서만 (e.g. DB generating numbers)
+3. Connect entity types
+  - Entity types to connect
+  - Minimum and maximum cardinalities
+  - Preference for a simpler design
