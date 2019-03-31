@@ -62,3 +62,22 @@ Business requirements are typically unstructured with missions, inconsistencies 
   - Entity types to connect
   - Minimum and maximum cardinalities
   - Preference for a simpler design
+
+
+### Design Transformations I
+
+##### Attribute Expansion
+
+![](images/transformation1-attribute-expansion.png)
+
+##### Compound Attribute Split
+
+![](images/transformation1-compound-attribute-split.png)
+
+##### Entity Type Expansion
+
+![](images/transformation1-entity-type-expansion.png)
+
+##### Weak Entity Type to Strong Entity Type
+
+![](images/transformation1-weak-to-strong.png)
