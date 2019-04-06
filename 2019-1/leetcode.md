@@ -44,3 +44,10 @@
 - [27. Remove Element](https://leetcode.com/problems/remove-element) by [C](https://leetcode.com/submissions/detail/218710010)
 - [26. Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array) by [C](https://leetcode.com/submissions/detail/218712426)
 - [58. Length of Last Word](https://leetcode.com/problems/length-of-last-word) by [C](https://leetcode.com/submissions/detail/218714969)
+
+#### 1st Week, Apr 2019
+- [171. Excel Sheet Column Number](https://leetcode.com/problems/excel-sheet-column-number) by [C](https://leetcode.com/submissions/detail/220394321)
+- [168. Excel Sheet Column Title](https://leetcode.com/problems/excel-sheet-column-title) by [Rust](https://leetcode.com/submissions/detail/220398154)
+- [67. Add Binary](https://leetcode.com/problems/add-binary) by [Rust](https://leetcode.com/submissions/detail/220398920)
+- [231. Power of Two](https://leetcode.com/problems/power-of-two) by [Rust](https://leetcode.com/submissions/detail/220399447)
+- [283. Move Zeroes](https://leetcode.com/problems/move-zeroes) by [Rust](https://leetcode.com/submissions/detail/220400537)
