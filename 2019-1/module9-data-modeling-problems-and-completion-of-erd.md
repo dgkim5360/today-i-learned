@@ -13,3 +13,18 @@
 ##### Problem 3. Transform Office ID of Agent into a Entity Type
 
 ![](images/data-modeling-1-tranform-agent-office.png)
+
+
+### Data Modeling Problems II
+
+##### Initial Problem: 회사 면접
+
+![](images/data-modeling-2-interviews.png)
+
+##### Problem Revision
+
+- Interview blocks
+- Bids
+- Company positions
+
+![](images/data-modeling-2-revision.png)
