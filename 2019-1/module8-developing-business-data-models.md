@@ -81,3 +81,26 @@ Business requirements are typically unstructured with missions, inconsistencies 
 ##### Weak Entity Type to Strong Entity Type
 
 ![](images/transformation1-weak-to-strong.png)
+
+
+### Design Transformation II
+
+##### Diagram Refinements
+
+Iterative design process
+- Evaluate alternatives
+- Use transformations to generate feasible alternatives
+- Gather additional requirements if necessary (from users)
+
+##### Attribute History Transformation
+
+![](images/transformation2-attribute-history-transformation.png)
+
+##### Reverse Transformations
+
+지금까지 배운 변환을 반대로 하면 됨. 즉 복잡한 것을 더 단순하게 만드는 작업이다.
+- Contract entity type <=> Attribute expansion
+- Combine attributes <=> compound attribute split
+- Contract entity type structure <=> Entity type expansion
+- Strong entity type to weak entity type <=> Weak entity type to strong entity type
+- Remove history <=> Attribute history transformation
