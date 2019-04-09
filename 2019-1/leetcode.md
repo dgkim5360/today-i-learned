@@ -51,3 +51,10 @@
 - [67. Add Binary](https://leetcode.com/problems/add-binary) by [Rust](https://leetcode.com/submissions/detail/220398920)
 - [231. Power of Two](https://leetcode.com/problems/power-of-two) by [Rust](https://leetcode.com/submissions/detail/220399447)
 - [283. Move Zeroes](https://leetcode.com/problems/move-zeroes) by [Rust](https://leetcode.com/submissions/detail/220400537)
+
+#### 2nd Week, Apr 2019
+- [155. Min Stack](https://leetcode.com/problems/min-stack) by [Rust](https://leetcode.com/submissions/detail/221169389)
+- [195. Tenth Line](https://leetcode.com/problems/tenth-line) by [Bash](https://leetcode.com/submissions/detail/221169885)
+- [232. Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks) by [Rust](https://leetcode.com/submissions/detail/221171356)
+- [217. Contains Duplicate](https://leetcode.com/problems/contains-duplicate) by [Rust](https://leetcode.com/submissions/detail/221173713)
+- [344. Reverse String](https://leetcode.com/problems/reverse-string) by [C](https://leetcode.com/submissions/detail/221180494)
