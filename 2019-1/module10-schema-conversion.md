@@ -40,3 +40,50 @@ Is the main theme of the logical DB design.
 ![](images/conversion-rules-2.png)
 
 ![](images/conversion-rules-3.png)
+
+
+### Conversion Problems
+
+![](images/conversion-problems-1-university-erd.png)
+
+![](images/conversion-problems-1-application.png)
+
+```sql
+CREATE TABLE Course
+(
+   ...,
+   PRIMARY KEY (CourseNo)
+)
+
+CREATE TABLE Student
+(
+    ...,
+    PRIMARY KEY (StdNo)
+)
+
+CREATE TABLE Faculty
+(
+    ...,
+    PRIMARY KEY (FacNo),
+    FOREIGN KEY (FacSupNo) REFERENCES Faculty
+)
+
+CREATE TABLE Offering
+(
+    ...,
+    PRIMARY KEY (OffNo),
+    FOREIGN KEY (CourseNo) REFERENCES Course,
+    FOREIGN KEY (FacNo) REFERENCES Faculty,
+    CONSTRAINT CourseNo NOT NULL
+)
+
+CREATE TABLE Enrollment
+(
+    ...,
+    PRIMARY KEY (OfferNo, StdNo),
+    FOREIGN KEY (OfferNo) REFERENCES Offering,
+    FOREIGN KEY (StdNo) REFERENCES Student
+)
+```
+
+![](images/conversion-problems-1-relational-diagram.png)
