@@ -25,3 +25,37 @@ A single table with a PK as a combination of student number and offer number
 ##### A Big Table vs. Small Tables
 - Query 작성하기엔 big table이 편함 (JOIN small tables == a big table)
 - Big table은 modification anomaly 때문에 transaction processing하기가 더욱 어려움
+
+
+### Functional Dependencies
+> The most important part of the normalization process is to identify or assert functional dependencies.
+
+##### Basics
+- Constraint on the possible rows in a table
+- Value neutral like FKs and PKs
+- Constraints must be asserted so that understanding business rules is necessary
+
+##### FD Definition
+- X determines Y
+  X => Y
+- For each X value, there is at most one Y value
+  e.g., StdNo => StdCity
+
+##### Unique Constraints Analogy
+- Similar to unique constraint
+  If X => Y, columns X and Y in the same table without other columns,
+  then X should have unique values.
+
+![](images/functional-dependencies-university-example.png)
+
+##### Falsification
+
+> A FD cannot be proven to be exist by examining the rows of a table.
+> However, you can falsify a functional dependency by examining sample rows of a table.
+
+> Find two rows that have the same X values but a different Y value!
+
+![](images/functional-dependencies-falsification-exercise.png)
+- StdNo -X-> OfferNo by (#1, #2), (#3, #4)
+- StdNo -X-> EnrGrade by (#3, #4)
+- StdNo -?-> StdClass
