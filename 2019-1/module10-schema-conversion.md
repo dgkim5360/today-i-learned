@@ -27,8 +27,8 @@ Is the main theme of the logical DB design.
 ##### 1-M Relationship Rule: Relationship => FK
 - FK should be placed in a child table
 
-##### M-M Relationship Rule: Relationship => Combined PK
-- Attributes in M-M relationship => Columns in table
+##### M-N Relationship Rule: Relationship => Combined PK
+- Attributes in M-N relationship => Columns in table
 
 ##### Identification Dependency Rule
 - Add components to PK of table

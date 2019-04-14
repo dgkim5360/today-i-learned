@@ -120,3 +120,18 @@ A single table with a PK as a combination of student number and offer number
 
 ![](images/bcnf-exercise-process-big-university-table.png)
 
+
+### Practical Concerns
+
+##### Competing Roles of Normalization: Refinement Tool vs. Initial Design Tool
+
+![](images/normalization-competing-roles.png)
+
+교수님은 refinement tool로써 normalization을 사용하는 것이 비교적 적절하다고 이야기 함.
+ERD를 그리는 것만으로도 (FD를 기록하는 지겨운 일 없이) 많은 normalization이 달성되기 때문.
+
+##### Denormalization
+- Purposeful violation of a normal form
+- Some FDs may not cause anomalies in practice (명확한 business rule에 의해)
+- May improve performance (많은 join을 하지 않아도 되니까)
+- Common for DW (무거운 query가 많아서)
